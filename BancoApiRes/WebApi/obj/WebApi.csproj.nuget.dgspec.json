@@ -1,23 +1,23 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\eucli\\Desktop\\CursoCreacionDeApis\\BancoApiRes\\WebApi\\WebApi.csproj": {}
+    "C:\\Users\\Euclides-Perez\\Desktop\\CursoCreacionDeApis\\BancoApiRes\\WebApi\\WebApi.csproj": {}
   },
   "projects": {
-    "C:\\Users\\eucli\\Desktop\\CursoCreacionDeApis\\BancoApiRes\\Aplication\\Aplication.csproj": {
+    "C:\\Users\\Euclides-Perez\\Desktop\\CursoCreacionDeApis\\BancoApiRes\\Aplication\\Aplication.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\eucli\\Desktop\\CursoCreacionDeApis\\BancoApiRes\\Aplication\\Aplication.csproj",
+        "projectUniqueName": "C:\\Users\\Euclides-Perez\\Desktop\\CursoCreacionDeApis\\BancoApiRes\\Aplication\\Aplication.csproj",
         "projectName": "Aplication",
-        "projectPath": "C:\\Users\\eucli\\Desktop\\CursoCreacionDeApis\\BancoApiRes\\Aplication\\Aplication.csproj",
-        "packagesPath": "C:\\Users\\eucli\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\eucli\\Desktop\\CursoCreacionDeApis\\BancoApiRes\\Aplication\\obj\\",
+        "projectPath": "C:\\Users\\Euclides-Perez\\Desktop\\CursoCreacionDeApis\\BancoApiRes\\Aplication\\Aplication.csproj",
+        "packagesPath": "C:\\Users\\Euclides-Perez\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Euclides-Perez\\Desktop\\CursoCreacionDeApis\\BancoApiRes\\Aplication\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\eucli\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Euclides-Perez\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
@@ -86,20 +86,20 @@
         }
       }
     },
-    "C:\\Users\\eucli\\Desktop\\CursoCreacionDeApis\\BancoApiRes\\WebApi\\WebApi.csproj": {
+    "C:\\Users\\Euclides-Perez\\Desktop\\CursoCreacionDeApis\\BancoApiRes\\WebApi\\WebApi.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\eucli\\Desktop\\CursoCreacionDeApis\\BancoApiRes\\WebApi\\WebApi.csproj",
+        "projectUniqueName": "C:\\Users\\Euclides-Perez\\Desktop\\CursoCreacionDeApis\\BancoApiRes\\WebApi\\WebApi.csproj",
         "projectName": "WebApi",
-        "projectPath": "C:\\Users\\eucli\\Desktop\\CursoCreacionDeApis\\BancoApiRes\\WebApi\\WebApi.csproj",
-        "packagesPath": "C:\\Users\\eucli\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\eucli\\Desktop\\CursoCreacionDeApis\\BancoApiRes\\WebApi\\obj\\",
+        "projectPath": "C:\\Users\\Euclides-Perez\\Desktop\\CursoCreacionDeApis\\BancoApiRes\\WebApi\\WebApi.csproj",
+        "packagesPath": "C:\\Users\\Euclides-Perez\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Euclides-Perez\\Desktop\\CursoCreacionDeApis\\BancoApiRes\\WebApi\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\eucli\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Euclides-Perez\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
@@ -115,8 +115,8 @@
           "net6.0": {
             "targetAlias": "net6.0",
             "projectReferences": {
-              "C:\\Users\\eucli\\Desktop\\CursoCreacionDeApis\\BancoApiRes\\Aplication\\Aplication.csproj": {
-                "projectPath": "C:\\Users\\eucli\\Desktop\\CursoCreacionDeApis\\BancoApiRes\\Aplication\\Aplication.csproj"
+              "C:\\Users\\Euclides-Perez\\Desktop\\CursoCreacionDeApis\\BancoApiRes\\Aplication\\Aplication.csproj": {
+                "projectPath": "C:\\Users\\Euclides-Perez\\Desktop\\CursoCreacionDeApis\\BancoApiRes\\Aplication\\Aplication.csproj"
               }
             }
           }
