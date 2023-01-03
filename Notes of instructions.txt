@@ -1,0 +1,47 @@
+					Instructions Apis witch .net
+					============================
+----------------QUE ES UNA API
+----------------Es una forma sencilla en que los programas o sitios web inercambian datos.
+----------------los datos que se intercambian son cais siempre JSON o XML
+	      
+   LLAMADAS A UNA API
+============================
+----------------Las llamdas a una api se representan mediante peticiones http
+----------------En las que la URL representa el recurso 
+----------------El metodo http representa la operacion que viene acompañada de un verbo o metodo (GET http:/)
+----------------El codigo del estado representa el resultado 200 ok 404 not found
+
+	      
+   ONION ACHITECTURE
+============================
+----------------Inversion de Control
+----------------Se refiere a todo a quel diseño de software cuyo poroposito obedece a la 
+----------------Necesidad de querer controlar el flujo de ejecucion de este
+
+  INYECCION DE DEPENDENCIAS
+============================
+----------------Es un patron de diseño que sirve para inyectar componentes a las clases que ya tenemos implementadas
+----------------esos componentes son contratos que necesitan nuestras clases para poder funcionar de ahi el concepto
+----------------de dependencias, nuestras clases no crearan esos objetos que necesitan, si no que se le sumistrara
+----------------otra clase contenedora pertenciente al framework DI que estamos utilizando.
+
+
+  CAPAS DE ONION ACHITECTURE
+============================
+----------------CAPA DE DOMINIO
+----------------Este es el centro de nuestra arquitectura, no tienen ningun tipo de dependencias, son planos sin 
+----------------una logica codigo
+
+----------------SERVICIOS DE DOMINIO
+----------------Define las interfaces necesarios para poder almacenas y recuperar objetos
+----------------Podemos convertir esta definicion en una definicion de patron repository
+----------------Este tipo de comportamiento tiene su implementacion en la capa mas alejada del centro 
+----------------nombrada infraestructura
+
+----------------SERVICIOS DE APLICACION
+----------------Tiene la funcion de abrir la puerta al corazon de la arquitectura, el sistrma central esta compuesto
+----------------por tres aros DOMINIO, SERVIVIOS DE DOMINIO Y SERVICIOS DE APLICACON
+
+----------------INFRAESTRUCTURA Y PRUEBAS UI
+----------------Esta es para componentes que cambian con frecuencias aqui es donde vive la interfaz con todas
+----------------sus vistas, controladores y todo lo relacionado con la logica de presntacion
