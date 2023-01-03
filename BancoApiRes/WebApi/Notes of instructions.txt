@@ -1,0 +1,106 @@
+					Instructions Apis witch .net
+					============================
+----------------QUE ES UNA API
+----------------Es una forma sencilla en que los programas o sitios web inercambian datos.
+----------------los datos que se intercambian son cais siempre JSON o XML
+	      
+   LLAMADAS A UNA API
+============================
+----------------Las llamdas a una api se representan mediante peticiones http
+----------------En las que la URL representa el recurso 
+----------------El metodo http representa la operacion que viene acompañada de un verbo o metodo (GET http:/)
+----------------El codigo del estado representa el resultado 200 ok 404 not found
+
+	      
+   ONION ACHITECTURE
+============================
+----------------Inversion de Control
+----------------Se refiere a todo a quel diseño de software cuyo poroposito obedece a la 
+----------------Necesidad de querer controlar el flujo de ejecucion de este
+
+  INYECCION DE DEPENDENCIAS
+============================
+----------------Es un patron de diseño que sirve para inyectar componentes a las clases que ya tenemos implementadas
+----------------esos componentes son contratos que necesitan nuestras clases para poder funcionar de ahi el concepto
+----------------de dependencias, nuestras clases no crearan esos objetos que necesitan, si no que se le sumistrara
+----------------otra clase contenedora pertenciente al framework DI que estamos utilizando.
+
+
+  CAPAS DE ONION ACHITECTURE
+============================
+----------------CAPA DE DOMINIO
+----------------Este es el centro de nuestra arquitectura, no tienen ningun tipo de dependencias, son planos sin 
+----------------una logica codigo
+
+----------------SERVICIOS DE DOMINIO
+----------------Define las interfaces necesarios para poder almacenas y recuperar objetos
+----------------Podemos convertir esta definicion en una definicion de patron repository
+----------------Este tipo de comportamiento tiene su implementacion en la capa mas alejada del centro 
+----------------nombrada infraestructura
+
+----------------SERVICIOS DE APLICACION
+----------------Tiene la funcion de abrir la puerta al corazon de la arquitectura, el sistrma central esta compuesto
+----------------por tres aros DOMINIO, SERVIVIOS DE DOMINIO Y SERVICIOS DE APLICACON
+
+----------------INFRAESTRUCTURA Y PRUEBAS UI
+----------------Esta es para componentes que cambian con frecuencias aqui es donde vive la interfaz con todas
+----------------sus vistas, controladores y todo lo relacionado con la logica de presntacion
+
+  IMPLEMENTACIOND DE LA ONION ARQUITECTURE EN UN PROYECTO
+=========================================================
+----------------Creamos la solucion en blanco
+----------------Dentro de la solucion creamos una carpeta llamada source o src
+----------------dentro de ella creamos 3 carpeta 	Core, Infraestructure, Presentation
+
+----------------Dentro de Core creamos dos proyectos de biblioteca de clases Aplication y Domain
+----------------Dentro de infraestructure creamos Dos proyectos de bibliotecas de clases Persistance y Shared
+----------------Dentro de Presentacion creamos el proyecto de la api llamado WebApi
+
+
+  PATRONES DE DESARROLLO
+========================
+---------------- CQRS 
+----------------El enfoque principal es separar la forma de leer y escribir datos
+----------------Peremite generara consulta mas sencillas
+
+----------------Mediator
+----------------Permite reducir las dependencias caoticas ente objetos 
+----------------Como resultado los componentes dependen solo de una unica clase de mediador en lugar de estar 
+----------------acoplados a decenas de sus colegas
+
+
+  CONFIGURANDO CAPA DE APLICACION
+==================================
+----------------Primero descargamos un paquete nuget para la WebApi llamado MediatR Contract
+				se utiliza para implementar el patrón de diseño Mediator en aplicaciones .NET
+				permite que varias clases o componentes de una aplicación se comuniquen entre sí 
+				de manera que no se conozcan mutuamente
+----------------Descargamos otro paquete nuget esta vez para la capa aplicacion que esta en la carpeta Core.
+----------------llamado MediatR.Extensions.Microsoft.DependencyInyection
+				paquete de Nuget que proporciona integración con el contenedor de inyección de dependencias (DI) de Microsoft.
+				Permite configurar y registrar MediatR y sus dependencias en el contenedor de DI de Microsoft,
+				lo que facilita la creación y uso de instancias de MediatR en aplicaciones .NET que utilizan DI.
+
+----------------Descargamos AutoMapper.Extencion.Dependency y AutoMapper en la capa aplication
+				AutoMapper.DependencyInjection es un paquete de Nuget que proporciona integración
+				con el contenedor de inyección de dependencias
+				AutoMapper es una librería de .NET que se utiliza para hacer mapeos entre diferentes 
+				tipos de objetos de manera sencilla y rápida. para tener algunos campos de un objeto en otro
+----------------Descargamos FluentValidation nuget que nos permite hacer validaciones con reglas fuertemente tipadas
+				la descargamos en aplications
+
+----------------Dentro de la capa aplication creamos las siguientes carpetas Behaviours, DTOs, Exceptions, Feautures, 
+				Filters, Interfaces, Mappings, Wrappers
+				por ultimo creamos una clase llamada ServicesExtensions 
+				Esta clase nos permite agrupar las inyecciones o matriculas de terceros o las propias que hagamos nosotros
+				Configuramos la clase tal cual como se esta y de esta manera todo se centra en el Core
+
+				De esta manera la capa infraestructura y la capa presentacion dependen del Core que es donde se encuentra el
+				Domain corazon de la aplicacion, el dominio no depende de nadie
+
+----------------Generalmente si tuvieramos solo WebApi matriculariamos servicios en en StartApp pero como en este caso es diferente
+----------------Devemos agregar referencias al proyecto aplicacion desde la WebApi
+----------------Devido a que la clase starup ya no esta hacemos un using de la capa aplicacion en program.cs
+----------------builder.Services.AddaplicationLayer();
+----------------de esta manera todos los servicios que yo matricule en ServiceExtensions cuando haga una referencia a 
+----------------AplicationLayer automaticamente seran reflejados en esa presentacion

@@ -1,0 +1,15 @@
+{
+  "version": 2,
+  "dgSpecHash": "3d2RNqXs9wBJvmOHl08WGYYzGx/wlg13YO9V4jqq7Vs7SqYBFtGV8t/rLXkDT+j4IbfNUDLRzcFjoz6CbhU8rg==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\eucli\\Desktop\\CursoCreacionDeApis\\BancoApiRes\\WebApiNew\\WebApiNew.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\eucli\\.nuget\\packages\\microsoft.extensions.apidescription.server\\3.0.0\\microsoft.extensions.apidescription.server.3.0.0.nupkg.sha512",
+    "C:\\Users\\eucli\\.nuget\\packages\\microsoft.openapi\\1.2.3\\microsoft.openapi.1.2.3.nupkg.sha512",
+    "C:\\Users\\eucli\\.nuget\\packages\\swashbuckle.aspnetcore\\6.2.3\\swashbuckle.aspnetcore.6.2.3.nupkg.sha512",
+    "C:\\Users\\eucli\\.nuget\\packages\\swashbuckle.aspnetcore.swagger\\6.2.3\\swashbuckle.aspnetcore.swagger.6.2.3.nupkg.sha512",
+    "C:\\Users\\eucli\\.nuget\\packages\\swashbuckle.aspnetcore.swaggergen\\6.2.3\\swashbuckle.aspnetcore.swaggergen.6.2.3.nupkg.sha512",
+    "C:\\Users\\eucli\\.nuget\\packages\\swashbuckle.aspnetcore.swaggerui\\6.2.3\\swashbuckle.aspnetcore.swaggerui.6.2.3.nupkg.sha512"
+  ],
+  "logs": []
+}
