@@ -52,5 +52,5 @@
 ----------------Creamos la solucion en blanco
 ----------------Dentro de la solucion creamos una carpeta llamada source o src
 ----------------dentro de ella creamos 3 carpeta 	Core, Infraestructure, Presentation
-----------------
+----------------Fin
 
