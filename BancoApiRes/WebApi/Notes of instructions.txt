@@ -91,7 +91,7 @@
 
 ----------------Dentro de la capa aplication creamos las siguientes carpetas Behaviours, DTOs, Exceptions, Feautures, 
 				Filters, Interfaces, Mappings, Wrappers
-				por ultimo creamos una clase llamada ServicesExtensions 
+				Por ultimo creamos una clase llamada ServicesExtensions ??????????
 				Esta clase nos permite agrupar las inyecciones o matriculas de terceros o las propias que hagamos nosotros
 				Configuramos la clase tal cual como se esta y de esta manera todo se centra en el Core
 
@@ -103,4 +103,22 @@
 ----------------Devido a que la clase starup ya no esta hacemos un using de la capa aplicacion en program.cs
 ----------------builder.Services.AddaplicationLayer();
 ----------------de esta manera todos los servicios que yo matricule en ServiceExtensions cuando haga una referencia a 
-----------------AplicationLayer automaticamente seran reflejados en esa presentacion
+----------------AplicationLayer automaticamente seran reflejados en esa biblioteca de clases
+
+
+  PIPELINE O MIDDLEWARE
+==================================
+----------------Cuando enviamos una solicitud a una pagina web y el servidor nos debuelve una respuesta estas dos, tanto como
+----------------Solicitudes y respuestas viajan atravez de Pipeline es decir, el Pipeline es un canal la request del usuario
+----------------y la response del servidor generalmente se conoce como MIDELWARE
+----------------Las validaciones de las request se hacen cuando entran al servidor Comenzemos a realizar estas validaciones
+
+----------------Para hacer validaciones de ese canal vamos a la carpeta Behaviours a generar una clase llamada ValidationBehaviours 
+----------------Esta se encargara de la validacion del Pipeline o Midelware
+
+----------------La clase ValidationBehaviours resibe dos tipos Trequest, TResponse(peticion y respuesta) luego implementa una interfaz
+----------------IPipelineBehavior<Trequest, TResponse> que tiene los mismos datos donde el TRequest es de tipo IRequest y saca un TResponse
+----------------Y esta clase nos proporsiona un metodo Handle.
+
+----------------Cuando usamos mediador Necesitamos un manejador para canalizar todas las peticiones 
+----------------rivate readonly IEnumerable<IValidator<Trequest>> _validators;

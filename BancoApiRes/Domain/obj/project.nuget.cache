@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "v4DBISGmVAqIAtsDkrMBj3GhGWy7bpFcMe7eL8DGRazvxN6iVKmR4TMiSiWEXNBT6cDlNz8OOv45joWzyL/hjA==",
+  "dgSpecHash": "1pymxhem3QjFWhCwI+pKYxuBMBtIbZ5CC40qJv9LewiM3Zopy4C+5Ak9uOl1dGB8y9PvVQrbKx9a9iSsWVcXXA==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Euclides-Perez\\Desktop\\CursoCreacionDeApis\\BancoApiRes\\Domain\\Domain.csproj",
+  "projectFilePath": "C:\\Users\\eucli\\Desktop\\CursoCreacionDeApis\\BancoApiRes\\Domain\\Domain.csproj",
   "expectedPackageFiles": [],
   "logs": []
 }

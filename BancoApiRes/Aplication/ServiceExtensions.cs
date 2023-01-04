@@ -19,6 +19,7 @@ namespace Aplication
 
             services.AddMediatR(Assembly.GetExecutingAssembly());
             /*Todas las sentencias de validacion iran dentro de la viblioteca de clase Aplication*/
+            /*todo lo anterior nos permite hacer referencias de proyectos*/
             
         }
     }
