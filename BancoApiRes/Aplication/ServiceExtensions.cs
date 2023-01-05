@@ -8,7 +8,7 @@ namespace Aplication
     public static  class ServiceExtensions
     {
         /*control+rg para borrar los using innesesarios*/
-        public static void AddaplicationLayer(this IServiceCollection services) 
+        public static void AddaplicationLayer(this IServiceCollection services) /*AddaplicationLayer es una instancia de IServiceCollection*/
         {
             /*ahora el llamado de matricula de servicios*/
             services.AddAutoMapper(Assembly.GetExecutingAssembly()); /* Esto me permite decirle que registre automatidcamente qu 

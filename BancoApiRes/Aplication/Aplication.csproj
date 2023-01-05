@@ -16,11 +16,13 @@
 
   <ItemGroup>
     <Folder Include="DTOs\" />
-    <Folder Include="Fautres\" />
+    <Folder Include="Fautres\Clientes\Comands\DeletClientCommand\" />
+    <Folder Include="Fautres\Clientes\Comands\UpdateClientCommand\" />
+    <Folder Include="Fautres\Clientes\Queries\GetAllClients\" />
+    <Folder Include="Fautres\Clientes\Queries\GetClientById\" />
     <Folder Include="Filters\" />
     <Folder Include="Interfaces\" />
     <Folder Include="Mappings\" />
-    <Folder Include="Wrappers\" />
   </ItemGroup>
 
 </Project>

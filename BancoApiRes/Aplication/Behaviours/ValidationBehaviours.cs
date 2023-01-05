@@ -36,7 +36,8 @@ namespace Aplication.Behaviours
                 if (failures.Count != 0)/* Si encontro algun error necesitamos lanzar un tipo de excepciones genericas y estas las creamos en 
                                        * la carpeta Exceptions*/
 
-                    throw new Exceptions.ValidationsExceptions(failures);            
+                    throw new Exceptions.ValidationsExceptions(failures);  
+                    /*Se toma la clase validation exceptions y se le pasa como parametro failures*/
             }
             return await next();
         }

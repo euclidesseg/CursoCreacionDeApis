@@ -10,6 +10,7 @@ builder.Services.AddControllers();
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
 builder.Services.AddaplicationLayer();
 /* referencia de la capa de aplication*/
+/*se está llamando en el archivo para configurar el contenedor de DI de la aplicación*/
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 

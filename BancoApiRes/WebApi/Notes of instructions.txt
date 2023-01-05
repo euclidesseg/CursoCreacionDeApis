@@ -69,9 +69,11 @@
 ----------------acoplados a decenas de sus colegas
 
 
-  CONFIGURANDO CAPA DE APLICACION
-==================================
-----------------Primero descargamos un paquete nuget para la WebApi llamado MediatR Contract
+
+====================================================================
+		CONFIGURANDO CAPA DE APLICACION
+====================================================================
+----------------Primero descargamos un paquete nuget para la WebApi llamado   Contract
 				se utiliza para implementar el patrón de diseño Mediator en aplicaciones .NET
 				permite que varias clases o componentes de una aplicación se comuniquen entre sí 
 				de manera que no se conozcan mutuamente
@@ -106,8 +108,8 @@
 ----------------AplicationLayer automaticamente seran reflejados en esa biblioteca de clases
 
 
-  PIPELINE O MIDDLEWARE
-==================================
+  PIPELINE O MIDDLEWARE PARA EL MANEJO DE EXCEPCIONES
+======================================================
 ----------------Cuando enviamos una solicitud a una pagina web y el servidor nos debuelve una respuesta estas dos, tanto como
 ----------------Solicitudes y respuestas viajan atravez de Pipeline es decir, el Pipeline es un canal la request del usuario
 ----------------y la response del servidor generalmente se conoce como MIDELWARE
@@ -122,3 +124,30 @@
 
 ----------------Cuando usamos mediador Necesitamos un manejador para canalizar todas las peticiones 
 ----------------rivate readonly IEnumerable<IValidator<Trequest>> _validators;
+
+=================================================================================
+				Hasta el momento hemos configurado las clases ServicesExtensions
+				esta primera clase esta utilizando el patrón de diseño de inversión de dependencias DI
+				atravez de servicios Los servicios son componentes que se pueden inyectar
+				en otras partes de la aplicación y
+				que proporcionan ciertas funcionalidades.
+
+				la clase ValidatorBehaviours 
+				En esta clase se recepcionaran las peticiones del cliente
+
+				y la clase Validation exceptions en esta clase se configuran 
+				las excepciones para que las tome la clase ValidatorBehaviours
+				En caso de hallar errores en las peticiones
+=================================================================================
+
+
+	CREANDO NUESTRA PRIMER ENTIDAD DE DOMINIO
+==============================================
+----------------Las entidades de dominio son clases que representan 
+----------------a los objetos del negocio y se utilizan para almacenar y recuperar datos de la base de datos
+----------------se compone de propiedades que representan los campos de la tabla de la base de datos
+----------------y puede tener también relaciones con otras entidades de dominio.
+
+----------------En Domain creamos una carpeta llamada Entities y una llamada Common dentro de Common creamos una clase llamada 
+----------------AuditableBaseEntity esta clase sera abstracta porque sera la entidad base para las demas entidades que iran dentro de entities
+----------------Dentro de entities creamos la clase cliente esta entidad es la primera que heredara de la clase abstracta
