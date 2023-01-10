@@ -43,5 +43,5 @@ namespace Aplication.Behaviours
         }
     }
 }
-        /* Creamos un canalzador que nos permite manejar las excepciones qaue nos permite manejar las excepsiones de las regla de negocios
+        /* Creamos un canalzador que nos permite manejar las excepciones de las regla de negocios
          * que pongamos en nuestra capa aplications*/

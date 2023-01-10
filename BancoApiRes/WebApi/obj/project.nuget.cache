@@ -1,9 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "DLbtn5btXI1tO2tSh1ddvw6rwiS3/PXTjQvOBV6HBjMV2gQAjqdrt2R3Ci0PGmJi3EC4aZhSHwCAhEn+x1rkEw==",
+  "dgSpecHash": "qNxLDw6yYVoL99Ldrg/9t8PMpyDmEZKB7A5dFpzjkvXniaEMhzg3Ef98gielAfTnqKoozMkfRPOt5zhknPjxxg==",
   "success": true,
   "projectFilePath": "C:\\Users\\eucli\\Desktop\\CursoCreacionDeApis\\BancoApiRes\\WebApi\\WebApi.csproj",
   "expectedPackageFiles": [
+    "C:\\Users\\eucli\\.nuget\\packages\\ardalis.specification\\6.1.0\\ardalis.specification.6.1.0.nupkg.sha512",
     "C:\\Users\\eucli\\.nuget\\packages\\automapper\\12.0.0\\automapper.12.0.0.nupkg.sha512",
     "C:\\Users\\eucli\\.nuget\\packages\\automapper.extensions.microsoft.dependencyinjection\\12.0.0\\automapper.extensions.microsoft.dependencyinjection.12.0.0.nupkg.sha512",
     "C:\\Users\\eucli\\.nuget\\packages\\fluentvalidation\\11.4.0\\fluentvalidation.11.4.0.nupkg.sha512",

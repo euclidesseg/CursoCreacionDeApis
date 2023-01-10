@@ -22,4 +22,19 @@ namespace Aplication.Fautres.Clientes.Comands.CreateClientCommand
         public string Email { get; set; }
         public string Direccion { get; set; }
     }
+
+
+    public class createClientCommandHandler : IRequestHandler<CreateClientCommand, Response<int>>
+        /* se esta inplementando la calse Response y se le inserta este id porque esta clase inplementada esta pidiendo un paametro
+         * ese parametro es generico y nosotros le estamos pasando un int ese sera el id que insertaremos cuando creemos nuestro cliente
+         * atravez de ese id podremos capturar el recurso*/
+    {
+        /* cuando nosotros llamemos la  clase createClientComand atravez del controlador lo que pasara es que automaticamente va a 
+         * ejecutar la clase mediadora(createClientCommandHandler)y necesitamos guardar 
+         * los datos dentro de un repositorio de datos y para eso implementaremos una persistencia para conexion a base de datos*/
+        public Task<Response<int>> Handle(CreateClientCommand request, CancellationToken cancellationToken)
+        {
+            throw new NotImplementedException();
+        }
+    }
 }

@@ -40,7 +40,7 @@
 
 ----------------SERVICIOS DE APLICACION
 ----------------Tiene la funcion de abrir la puerta al corazon de la arquitectura, el sistrma central esta compuesto
-----------------por tres aros DOMINIO, SERVIVIOS DE DOMINIO Y SERVICIOS DE APLICACON
+----------------por tres aros DOMINIO, SERVIVCIOS DE DOMINIO Y SERVICIOS DE APLICACON
 
 ----------------INFRAESTRUCTURA Y PRUEBAS UI
 ----------------Esta es para componentes que cambian con frecuencias aqui es donde vive la interfaz con todas
@@ -128,7 +128,7 @@
 =================================================================================
 				Hasta el momento hemos configurado las clases ServicesExtensions
 				esta primera clase esta utilizando el patrón de diseño de inversión de dependencias DI
-				atravez de servicios Los servicios son componentes que se pueden inyectar
+				atravez de servicios: Los servicios son componentes que se pueden inyectar
 				en otras partes de la aplicación y
 				que proporcionan ciertas funcionalidades.
 
@@ -148,6 +148,25 @@
 ----------------se compone de propiedades que representan los campos de la tabla de la base de datos
 ----------------y puede tener también relaciones con otras entidades de dominio.
 
-----------------En Domain creamos una carpeta llamada Entities y una llamada Common dentro de Common creamos una clase llamada 
+----------------En Domain creamos una carpeta llamada Entities y una llamada Common, dentro de Common creamos una clase llamada 
 ----------------AuditableBaseEntity esta clase sera abstracta porque sera la entidad base para las demas entidades que iran dentro de entities
 ----------------Dentro de entities creamos la clase cliente esta entidad es la primera que heredara de la clase abstracta
+
+
+	IMPLEMENTACION DE UNA PERSISTENCIA
+==============================================
+----------------Ahora trabajaremos con la biblioteca infraestructura 
+----------------La persistencia se refiere a la capacidad de un sistema de almacenar y mantener datos a largo plazo
+----------------dentro de la biblioteca de clases agregamos la carpeta de de Contexts esta carpeta tendran nuestros DbContexts
+----------------DbContext es una clase de Entity Framework que se utiliza como la principal
+----------------herramienta de trabajo para manipular datos en una base de datos desde una aplicación .NET
+----------------Esta clase es propia del frameowork .net
+
+----------------Luego de configurar la clase AplicationDbContex descargamos lo siguiente
+----------------En la biblioteca aplicacion instalamos el paquete nuguet Ardalis.Specification
+----------------este paquete implementa el patron repositorio y en la persistencia agregamos
+----------------Ardalis.Specification.EntityFrameworkcor 
+
+----------------Ahora para implementar el repositorio necesitamos crear una interfaz generica llamada IrepositoryAsync
+----------------Ahora crearemos un repositorio en la persistenccia creamos una carpeta llamada repository y dentro de esta 
+----------------la clase myrepository la cual va a heredar de Irepositoryasync
